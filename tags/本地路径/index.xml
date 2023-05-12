@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>本地路径 on Huoguo32 Blog</title>
-    <link>https://huoguo32.github.io/tags/%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84/</link>
+    <link>https://huoguogit.github.io/tags/%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84/</link>
     <description>Recent content in 本地路径 on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguo32.github.io/tags/%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>高德加载自定义覆盖物图标本地路径问题</title>
-      <link>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</link>
+      <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</guid>
       <description>高德地图渲染点覆盖物时导入本地图标发现导入的图标不会生效 传统的写法 image: &amp;#39;//vdata.amap.com/icons/b18/1/2.png&amp;#39;, //或者 require(‘./xxxx’) 在vue3中都没用,会提示r</description>
     </item>
     

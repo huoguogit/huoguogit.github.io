@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>地图 on Huoguo32 Blog</title>
-    <link>https://huoguo32.github.io/tags/%E5%9C%B0%E5%9B%BE/</link>
+    <link>https://huoguogit.github.io/tags/%E5%9C%B0%E5%9B%BE/</link>
     <description>Recent content in 地图 on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguo32.github.io/tags/%E5%9C%B0%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/%E5%9C%B0%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>高德加载自定义覆盖物图标本地路径问题</title>
-      <link>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</link>
+      <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</guid>
       <description>高德地图渲染点覆盖物时导入本地图标发现导入的图标不会生效 传统的写法 image: &amp;#39;//vdata.amap.com/icons/b18/1/2.png&amp;#39;, //或者 require(‘./xxxx’) 在vue3中都没用,会提示r</description>
     </item>
     
     <item>
       <title>高德引入AmapUI,</title>
-      <link>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/</link>
+      <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/</guid>
+      <guid>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/</guid>
       <description>高德地图除了引入传统必须得js api,还可以引入组件库AMapUI,可以使用下面的一些基础控件 https://lbs.amap.com/api/amap-ui/reference-amap-ui/control/basiccontrol 首先安装库 npm install @amap/amapui-wrapper //或者 yarn add @amap/amapui-wrapper 引入相关文件 ​</description>
     </item>
     
     <item>
       <title>高德渲染图标概率性报错(不显示)</title>
-      <link>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E6%B8%B2%E6%9F%93%E5%9B%BE%E6%A0%87%E6%A6%82%E7%8E%87%E6%80%A7%E6%8A%A5%E9%94%99%E4%B8%8D%E6%98%BE%E7%A4%BA/</link>
+      <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%B8%B2%E6%9F%93%E5%9B%BE%E6%A0%87%E6%A6%82%E7%8E%87%E6%80%A7%E6%8A%A5%E9%94%99%E4%B8%8D%E6%98%BE%E7%A4%BA/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E6%B8%B2%E6%9F%93%E5%9B%BE%E6%A0%87%E6%A6%82%E7%8E%87%E6%80%A7%E6%8A%A5%E9%94%99%E4%B8%8D%E6%98%BE%E7%A4%BA/</guid>
+      <guid>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%B8%B2%E6%9F%93%E5%9B%BE%E6%A0%87%E6%A6%82%E7%8E%87%E6%80%A7%E6%8A%A5%E9%94%99%E4%B8%8D%E6%98%BE%E7%A4%BA/</guid>
       <description>新汴河大屏项目.发现根据请求数据加载网络点位时,有的时候能顺利加载点位,有的时候无法加载 打印加载失败的报错信息,发现都是通知AMap is not defined. c</description>
     </item>
     
     <item>
       <title>element图标按需加载失效/插槽图标.</title>
-      <link>https://huoguo32.github.io/post/element%E5%9B%BE%E6%A0%87%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD%E5%A4%B1%E6%95%88%E6%8F%92%E6%A7%BD%E5%9B%BE%E6%A0%87/</link>
+      <link>https://huoguogit.github.io/post/element%E5%9B%BE%E6%A0%87%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD%E5%A4%B1%E6%95%88%E6%8F%92%E6%A7%BD%E5%9B%BE%E6%A0%87/</link>
       <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://huoguo32.github.io/post/element%E5%9B%BE%E6%A0%87%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD%E5%A4%B1%E6%95%88%E6%8F%92%E6%A7%BD%E5%9B%BE%E6%A0%87/</guid>
+      <guid>https://huoguogit.github.io/post/element%E5%9B%BE%E6%A0%87%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD%E5%A4%B1%E6%95%88%E6%8F%92%E6%A7%BD%E5%9B%BE%E6%A0%87/</guid>
       <description>今天在实现elementPlus自动导入图标发现导入的图标不会生效 解决链接:https://www.jianshu.com/p/232298</description>
     </item>
     
