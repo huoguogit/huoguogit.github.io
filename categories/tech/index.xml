@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on Huoguo32 Blog</title>
+    <link>https://huoguo32.github.io/categories/tech/</link>
+    <description>Recent content in Tech on Huoguo32 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguo32.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>微信小程序observe不生效</title>
+      <link>https://huoguo32.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6observe%E4%B8%8D%E7%94%9F%E6%95%88/</link>
+      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6observe%E4%B8%8D%E7%94%9F%E6%95%88/</guid>
+      <description>微信小程序中,自定义的组件components的页面,写一个observe监听器,但是不生效,之前也遇到过类似的问题,用一些小程序组件特有的</description>
+    </item>
+    
+    <item>
+      <title>高德为信息窗体添加点击事件</title>
+      <link>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E4%B8%BA%E4%BF%A1%E6%81%AF%E7%AA%97%E4%BD%93%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E4%B8%BA%E4%BF%A1%E6%81%AF%E7%AA%97%E4%BD%93%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6/</guid>
+      <description>即使是用的vue，也不能使用@click为窗体添加点击事件，需要使用onclick，并且在定义了函数后，使用该函数还是会报函数未定义的错误，</description>
+    </item>
+    
+    <item>
+      <title>高德加载自定义覆盖物图标本地路径问题</title>
+      <link>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</guid>
+      <description>高德地图渲染点覆盖物时导入本地图标发现导入的图标不会生效 传统的写法 image: &amp;#39;//vdata.amap.com/icons/b18/1/2.png&amp;#39;, //或者 require(‘./xxxx’) 在vue3中都没用,会提示r</description>
+    </item>
+    
+    <item>
+      <title>高德引入AmapUI,</title>
+      <link>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/</guid>
+      <description>高德地图除了引入传统必须得js api,还可以引入组件库AMapUI,可以使用下面的一些基础控件 https://lbs.amap.com/api/amap-ui/reference-amap-ui/control/basiccontrol 首先安装库 npm install @amap/amapui-wrapper //或者 yarn add @amap/amapui-wrapper 引入相关文件 ​</description>
+    </item>
+    
+    <item>
+      <title>vue3中的reactive显示值</title>
+      <link>https://huoguo32.github.io/post/vue3%E4%B8%AD%E7%9A%84reactive%E6%98%BE%E7%A4%BA%E5%80%BC/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/vue3%E4%B8%AD%E7%9A%84reactive%E6%98%BE%E7%A4%BA%E5%80%BC/</guid>
+      <description>vue3中reactive一般是用来定义响应式数据对象的,如果想要查看这个对象的值,不需要使用.value,直接打印就可以了 const state = reactive({ count: 0 }) console.log(state.count)</description>
+    </item>
+    
+    <item>
+      <title>高德显示AMap is not defined</title>
+      <link>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAamap-is-not-defined/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAamap-is-not-defined/</guid>
+      <description>高德在vue中常见的的组件加载问题,AMap is not defined,直接这么写会报错, const districtSearch = new AMap.DistrictSearch({ subdistrict: 1, extensions: &amp;#39;all&amp;#39;, level: &amp;#39;city&amp;#39;, showbiz: false, city }) districtSearch.search(city, (status, result) =&amp;gt; { console.log(city, status, result) if (status === &amp;#39;complete&amp;#39;) { districtList.value</description>
+    </item>
+    
+    <item>
+      <title>pinia只能存储vue数据或方法</title>
+      <link>https://huoguo32.github.io/post/pinia%E5%8F%AA%E8%83%BD%E5%AD%98%E5%82%A8vue%E6%95%B0%E6%8D%AE%E6%88%96%E6%96%B9%E6%B3%95-copy/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/pinia%E5%8F%AA%E8%83%BD%E5%AD%98%E5%82%A8vue%E6%95%B0%E6%8D%AE%E6%88%96%E6%96%B9%E6%B3%95-copy/</guid>
+      <description>试图将高德生成的map实例,存储到pinia中,但是发现pinia只能存储vue数据或方法,不能存储高德的map实例 Pinia 是一个基于 Vue.js 的状态管理</description>
+    </item>
+    
+    <item>
+      <title>provide只能用于爷传孙,不能用于兄弟组件</title>
+      <link>https://huoguo32.github.io/post/provide%E5%8F%AA%E8%83%BD%E7%94%A8%E4%BA%8E%E7%88%B7%E4%BC%A0%E5%AD%99%E4%B8%8D%E8%83%BD%E7%94%A8%E4%BA%8E%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/provide%E5%8F%AA%E8%83%BD%E7%94%A8%E4%BA%8E%E7%88%B7%E4%BC%A0%E5%AD%99%E4%B8%8D%E8%83%BD%E7%94%A8%E4%BA%8E%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6/</guid>
+      <description>在Vue中，使用provide/inject提供的数据是可以在兄弟组件中访问的，不仅限于父子组件之间。这是因为provide/inject是</description>
+    </item>
+    
+    <item>
+      <title>高德渲染图标概率性报错(不显示)</title>
+      <link>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E6%B8%B2%E6%9F%93%E5%9B%BE%E6%A0%87%E6%A6%82%E7%8E%87%E6%80%A7%E6%8A%A5%E9%94%99%E4%B8%8D%E6%98%BE%E7%A4%BA/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E6%B8%B2%E6%9F%93%E5%9B%BE%E6%A0%87%E6%A6%82%E7%8E%87%E6%80%A7%E6%8A%A5%E9%94%99%E4%B8%8D%E6%98%BE%E7%A4%BA/</guid>
+      <description>新汴河大屏项目.发现根据请求数据加载网络点位时,有的时候能顺利加载点位,有的时候无法加载 打印加载失败的报错信息,发现都是通知AMap is not defined. c</description>
+    </item>
+    
+    <item>
+      <title>element Autocomplete组件下拉框无法渲染</title>
+      <link>https://huoguo32.github.io/post/element-autocomplete%E7%BB%84%E4%BB%B6%E4%B8%8B%E6%8B%89%E6%A1%86%E6%97%A0%E6%B3%95%E6%B8%B2%E6%9F%93/</link>
+      <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/element-autocomplete%E7%BB%84%E4%BB%B6%E4%B8%8B%E6%8B%89%E6%A1%86%E6%97%A0%E6%B3%95%E6%B8%B2%E6%9F%93/</guid>
+      <description>element的Autocomplete组件下拉框无法渲染,但是输入框可以正常输入,并有数据,查阅资料显示 const querySearchAsync = (queryStr, cb) =&amp;gt; { placeSearch.search(queryStr, (status, result) =&amp;gt; { // console.log(status, result) if (status</description>
+    </item>
+    
+    <item>
+      <title>element Autocomplete组件样式修改</title>
+      <link>https://huoguo32.github.io/post/element-autocomplete%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F%E4%BF%AE%E6%94%B9/</link>
+      <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/element-autocomplete%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F%E4%BF%AE%E6%94%B9/</guid>
+      <description>element的Autocomplete组件下拉框样式无法直接修改.查阅资料后发现需要先取消掉中的scope.然后再在style中找到相应的</description>
+    </item>
+    
+    <item>
+      <title>高德显示xxx is not a construct </title>
+      <link>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAxxx-is-not-a-construct-copy/</link>
+      <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAxxx-is-not-a-construct-copy/</guid>
+      <description>高德在vue中常见的的组件加载问题,xxx组件is not a constructor 在创建高德地图时引入插件.有时候会没用.网上说的引入sdk的方法也不适用于vue 解决</description>
+    </item>
+    
+    <item>
+      <title>文字超出后换行(小程序)</title>
+      <link>https://huoguo32.github.io/post/%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E5%90%8E%E6%8D%A2%E8%A1%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F-copy/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E5%90%8E%E6%8D%A2%E8%A1%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F-copy/</guid>
+      <description>可以使用CSS的word-wrap和word-break属性来实现中文自动换行。 word-wrap属性用于指定是否允许单词内换行，取值包括n</description>
+    </item>
+    
+    <item>
+      <title>测试图片上传</title>
+      <link>https://huoguo32.github.io/post/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0/</guid>
+      <description>贴一个图片地址看能否上传成功</description>
+    </item>
+    
+    <item>
+      <title>element图标按需加载失效/插槽图标.</title>
+      <link>https://huoguo32.github.io/post/element%E5%9B%BE%E6%A0%87%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD%E5%A4%B1%E6%95%88%E6%8F%92%E6%A7%BD%E5%9B%BE%E6%A0%87/</link>
+      <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/element%E5%9B%BE%E6%A0%87%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD%E5%A4%B1%E6%95%88%E6%8F%92%E6%A7%BD%E5%9B%BE%E6%A0%87/</guid>
+      <description>今天在实现elementPlus自动导入图标发现导入的图标不会生效 解决链接:https://www.jianshu.com/p/232298</description>
+    </item>
+    
+    <item>
+      <title>修改组件中的样式:v-deep</title>
+      <link>https://huoguo32.github.io/post/%E4%BF%AE%E6%94%B9%E7%BB%84%E4%BB%B6%E4%B8%AD%E7%9A%84%E6%A0%B7%E5%BC%8Fv-deep/</link>
+      <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/%E4%BF%AE%E6%94%B9%E7%BB%84%E4%BB%B6%E4%B8%AD%E7%9A%84%E6%A0%B7%E5%BC%8Fv-deep/</guid>
+      <description>element等组件库中的组件需要通过样式穿透修改.找到他们类名,一步步穿透下去 你可以使用 ::v-deep 或者 /deep/ 来覆盖 Element Plus 组件的样式。这两种方式的作用相同</description>
+    </item>
+    
+    <item>
+      <title>hello world</title>
+      <link>https://huoguo32.github.io/post/hello-world/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/hello-world/</guid>
+      <description>测试第一篇blog</description>
+    </item>
+    
+    <item>
+      <title>笔记</title>
+      <link>https://huoguo32.github.io/post/note/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/note/</guid>
+      <description>生成笔记自动部署测试</description>
+    </item>
+    
+  </channel>
+</rss>

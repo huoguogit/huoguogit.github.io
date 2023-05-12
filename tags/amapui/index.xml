@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AmapUi on Huoguo32 Blog</title>
+    <link>https://huoguo32.github.io/tags/amapui/</link>
+    <description>Recent content in AmapUi on Huoguo32 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguo32.github.io/tags/amapui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>高德引入AmapUI,</title>
+      <link>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguo32.github.io/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/</guid>
+      <description>高德地图除了引入传统必须得js api,还可以引入组件库AMapUI,可以使用下面的一些基础控件 https://lbs.amap.com/api/amap-ui/reference-amap-ui/control/basiccontrol 首先安装库 npm install @amap/amapui-wrapper //或者 yarn add @amap/amapui-wrapper 引入相关文件 ​</description>
+    </item>
+    
+  </channel>
+</rss>
