@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>小程序中出现this.setdata Undifined</title>
+      <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%87%BA%E7%8E%B0this.setdata-undifined/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%87%BA%E7%8E%B0this.setdata-undifined/</guid>
+      <description>小程序函数中有概率会出现this.setdata时,报错显示 Cannot read property &amp;lsquo;setData&amp;rsquo; of undefined 这是因为在声明函数时,声明的方法不同,也会造成this指向不同,导致</description>
+    </item>
+    
+    <item>
       <title>文字超出后换行(小程序)</title>
       <link>https://huoguogit.github.io/post/%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E5%90%8E%E6%8D%A2%E8%A1%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F-copy/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>

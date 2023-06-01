@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="vue3中的reactive显示值" />
-    <meta property="og:title" content="vue3中的reactive显示值" />
-    <meta property="twitter:title" content="vue3中的reactive显示值" />
+    <meta name="title" content="小程序中出现this.setdata Undifined" />
+    <meta property="og:title" content="小程序中出现this.setdata Undifined" />
+    <meta property="twitter:title" content="小程序中出现this.setdata Undifined" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="火锅32, 火锅32的网络日志, 火锅32的博客,  博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>vue3中的reactive显示值 | huoguo32 Blog</title>
+    <title>小程序中出现this.setdata Undifined | huoguo32 Blog</title>
 
-    <link rel="canonical" href="/post/vue3%E4%B8%AD%E7%9A%84reactive%E6%98%BE%E7%A4%BA%E5%80%BC/">
+    <link rel="canonical" href="/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%87%BA%E7%8E%B0this.setdata-undifined/">
 
     
     
@@ -170,12 +170,12 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/vue" title="vue">
-                            vue
+                        <a class="tag" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F" title="小程序">
+                            小程序
                         </a>
                         
                     </div>
-                    <h1>vue3中的reactive显示值</h1>
+                    <h1>小程序中出现this.setdata Undifined</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
@@ -210,12 +210,32 @@
                 post-container">
 
                 
-                <p>vue3中reactive一般是用来定义响应式数据对象的,如果想要查看这个对象的值,不需要使用.value,直接打印就可以了</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vue" data-lang="vue"><span style="display:flex;"><span><span style="color:#ff79c6">const</span> state <span style="color:#ff79c6">=</span> reactive({
-</span></span><span style="display:flex;"><span>  count<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>
-</span></span><span style="display:flex;"><span>})
-</span></span><span style="display:flex;"><span>console.log(state.count) <span style="color:#6272a4">// 0
-</span></span></span></code></pre></div>
+                <p>小程序函数中有概率会出现this.setdata时,报错显示 Cannot read property &lsquo;setData&rsquo; of undefined
+这是因为在声明函数时,声明的方法不同,也会造成this指向不同,导致报错
+以下两种写法会导致不同的this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vue" data-lang="vue"><span style="display:flex;"><span>success<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">function</span> (res) {
+</span></span><span style="display:flex;"><span>   <span style="color:#ff79c6">this</span>.setData({})
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>success<span style="color:#ff79c6">:</span> (res) =&gt;  {
+</span></span><span style="display:flex;"><span>   <span style="color:#ff79c6">this</span>.setData({})
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vue" data-lang="vue"><span style="display:flex;"><span><span style="color:#6272a4">//测试
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>success<span style="color:#ff79c6">:</span> (res) =&gt; {
+</span></span><span style="display:flex;"><span>   console.log(<span style="color:#f1fa8c">&#34;(res) =&gt; { }时：&#34;</span> <span style="color:#ff79c6">+</span> <span style="color:#ff79c6">this</span>);
+</span></span><span style="display:flex;"><span>},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>success<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">function</span> (res){
+</span></span><span style="display:flex;"><span>   console.log(<span style="color:#f1fa8c">&#34;function (res)时：&#34;</span> <span style="color:#ff79c6">+</span> <span style="color:#ff79c6">this</span>);
+</span></span><span style="display:flex;"><span>},
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">//结果
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">function</span> (res)时：<span style="color:#ff79c6">undefined</span>
+</span></span><span style="display:flex;"><span>(res) =&gt; { }时：[object <span style="color:#8be9fd;font-style:italic">Object</span>]
+</span></span></code></pre></div><p>function (res) 写法时 ，this 是 undefined 未定义的。
+(res) =&gt; { } 写法时 this 是 Object。
+如果函数作为对象的方法调用，this 指向的是这个上级对象，即调用方法的对象。
+如果是构造函数中的 this，则 this 指向新创建的对象本身。</p>
+
 
                 
                 
@@ -264,13 +284,13 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%87%BA%E7%8E%B0this.setdata-undifined/" data-toggle="tooltip" data-placement="top" title="小程序中出现this.setdata Undifined">&larr;
+                        <a href="/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAamap-is-not-defined/" data-toggle="tooltip" data-placement="top" title="高德显示AMap is not defined">&larr;
                             Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/" data-toggle="tooltip" data-placement="top" title="高德引入AmapUI,">Next
+                        <a href="/post/vue3%E4%B8%AD%E7%9A%84reactive%E6%98%BE%E7%A4%BA%E5%80%BC/" data-toggle="tooltip" data-placement="top" title="vue3中的reactive显示值">Next
                             Post &rarr;</a>
                     </li>
                     

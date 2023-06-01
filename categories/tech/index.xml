@@ -62,6 +62,15 @@
     </item>
     
     <item>
+      <title>小程序中出现this.setdata Undifined</title>
+      <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%87%BA%E7%8E%B0this.setdata-undifined/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%87%BA%E7%8E%B0this.setdata-undifined/</guid>
+      <description>小程序函数中有概率会出现this.setdata时,报错显示 Cannot read property &amp;lsquo;setData&amp;rsquo; of undefined 这是因为在声明函数时,声明的方法不同,也会造成this指向不同,导致</description>
+    </item>
+    
+    <item>
       <title>高德显示AMap is not defined</title>
       <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAamap-is-not-defined/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
@@ -72,10 +81,10 @@
     
     <item>
       <title>pinia只能存储vue数据或方法</title>
-      <link>https://huoguogit.github.io/post/pinia%E5%8F%AA%E8%83%BD%E5%AD%98%E5%82%A8vue%E6%95%B0%E6%8D%AE%E6%88%96%E6%96%B9%E6%B3%95-copy/</link>
+      <link>https://huoguogit.github.io/post/pinia%E5%8F%AA%E8%83%BD%E5%AD%98%E5%82%A8vue%E6%95%B0%E6%8D%AE%E6%88%96%E6%96%B9%E6%B3%95/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://huoguogit.github.io/post/pinia%E5%8F%AA%E8%83%BD%E5%AD%98%E5%82%A8vue%E6%95%B0%E6%8D%AE%E6%88%96%E6%96%B9%E6%B3%95-copy/</guid>
+      <guid>https://huoguogit.github.io/post/pinia%E5%8F%AA%E8%83%BD%E5%AD%98%E5%82%A8vue%E6%95%B0%E6%8D%AE%E6%88%96%E6%96%B9%E6%B3%95/</guid>
       <description>试图将高德生成的map实例,存储到pinia中,但是发现pinia只能存储vue数据或方法,不能存储高德的map实例 Pinia 是一个基于 Vue.js 的状态管理</description>
     </item>
     
