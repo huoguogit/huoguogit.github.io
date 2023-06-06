@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.113.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="小程序中引入组件时&#39;Cannot read property ‘name‘ of undefined TypeError&#39;" />
+    <meta property="og:title" content="小程序中引入组件时&#39;Cannot read property ‘name‘ of undefined TypeError&#39;" />
+    <meta property="twitter:title" content="小程序中引入组件时&#39;Cannot read property ‘name‘ of undefined TypeError&#39;" />
     
 
     
@@ -35,9 +34,9 @@
     <meta name="keyword"  content="火锅32, 火锅32的网络日志, 火锅32的博客,  博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Huoguo32 Blog | huoguo32 Blog</title>
+    <title>小程序中引入组件时&#39;Cannot read property ‘name‘ of undefined TypeError&#39; | huoguo32 Blog</title>
 
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%BC%95%E5%85%A5%E7%BB%84%E4%BB%B6%E6%97%B6cannot-read-property-name-of-undefined-typeerror/">
 
     
     
@@ -156,14 +155,41 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/avatar.jpeg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/avatar.jpeg')
+    }
+</style>
+
+<header class="intro-header" >
+
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Huoguo32 Blog </h1>
-                    
-		    <span class="subheading">路在脚下，心向远方</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F" title="小程序">
+                            小程序
+                        </a>
+                        
+                    </div>
+                    <h1>小程序中引入组件时&#39;Cannot read property ‘name‘ of undefined TypeError&#39;</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;&#34;
+                             
+                            on 
+                            Wednesday, March 15, 2023
+                            
+                            
+                            
+                            
+                    </span>
                 </div>
             </div>
         </div>
@@ -172,357 +198,223 @@
 
 
 
-  
-<div data-pagefind-ignore="all" class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
+
+<article>
+    <div class="container">
+        <div class="row">
+
             
-<div data-pagefind-ignore="all">
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/provide%E5%8F%AA%E8%83%BD%E7%94%A8%E4%BA%8E%E7%88%B7%E4%BC%A0%E5%AD%99%E4%B8%8D%E8%83%BD%E7%94%A8%E4%BA%8E%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6/">
-        <h2 class="post-title">
-            provide只能用于爷传孙,不能用于兄弟组件
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            在Vue中，使用provide/inject提供的数据是可以在兄弟组件中访问的，不仅限于父子组件之间。这是因为provide/inject是
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;huoguo32&#34; on Tuesday, March 14, 2023
-        
-        
-    
-    </p>
+                
+                <p>小程序中引入组件时报错,&lsquo;Cannot read property ‘name‘ of undefined TypeError&rsquo;
+原因:组件中的声明 properties 属性时需要声明其 属性类型</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vue" data-lang="vue"><span style="display:flex;"><span>properties<span style="color:#ff79c6">:</span> {
+</span></span><span style="display:flex;"><span>    isshow<span style="color:#ff79c6">:</span> {
+</span></span><span style="display:flex;"><span>      type<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">Boolean</span>,
+</span></span><span style="display:flex;"><span>      value<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  },
+</span></span></code></pre></div>
 
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
 </div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%B8%B2%E6%9F%93%E5%9B%BE%E6%A0%87%E6%A6%82%E7%8E%87%E6%80%A7%E6%8A%A5%E9%94%99%E4%B8%8D%E6%98%BE%E7%A4%BA/">
-        <h2 class="post-title">
-            高德渲染图标概率性报错(不显示)
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            新汴河大屏项目.发现根据请求数据加载网络点位时,有的时候能顺利加载点位,有的时候无法加载 打印加载失败的报错信息,发现都是通知AMap is not defined. c
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;&#34; on Tuesday, March 14, 2023
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://huoguogit.github.io/"><img src="/img/favicon.png" />Huoguo32 Blog</a></span>
         
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/element-autocomplete%E7%BB%84%E4%BB%B6%E4%B8%8B%E6%8B%89%E6%A1%86%E6%97%A0%E6%B3%95%E6%B8%B2%E6%9F%93/">
-        <h2 class="post-title">
-            element Autocomplete组件下拉框无法渲染
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            element的Autocomplete组件下拉框无法渲染,但是输入框可以正常输入,并有数据,查阅资料显示 const querySearchAsync = (queryStr, cb) =&gt; { placeSearch.search(queryStr, (status, result) =&gt; { // console.log(status, result) if (status
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;huoguo32&#34; on Wednesday, March 8, 2023
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/element-autocomplete%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F%E4%BF%AE%E6%94%B9/">
-        <h2 class="post-title">
-            element Autocomplete组件样式修改
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            element的Autocomplete组件下拉框样式无法直接修改.查阅资料后发现需要先取消掉中的scope.然后再在style中找到相应的
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;huoguo32&#34; on Wednesday, March 8, 2023
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAxxx-is-not-a-construct-copy/">
-        <h2 class="post-title">
-            高德显示xxx is not a construct 
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            高德在vue中常见的的组件加载问题,xxx组件is not a constructor 在创建高德地图时引入插件.有时候会没用.网上说的引入sdk的方法也不适用于vue 解决
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;huoguo32&#34; on Wednesday, March 8, 2023
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-</div>
-
-            
-
-
-<ul class="pager" data-pagefind-ignore="all">
-    
-    <li class="previous">
-        <a href="/page/2/">&larr; Newer Posts</a>
-    </li>
-    
-    
-    <li class="next">
-        <a href="/page/4/">Older Posts &rarr;</a>
-    </li>
-    
-</ul>
-
-
-       	</div>
-        
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-	
-    <section class="visible-md visible-lg">
-	
-        <div class="short-about">
-            
-            <a href="/about">
-               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
-            </a>
-            
-            
-                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
-            
-           
-           <ul class="list-inline">
-               
-               <li>
-                   <a href="mailto:youremail@gmail.com">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                      </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/yourgithub">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-                    <li>
-                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-            
-            
-            
-               
-               
-               
-               
-                </ul>
-            </div>
-    </section>
-	
-    
-    
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FEATURED TAGS</h5>
-        <div class="tags">
-            
-            
-               
-            
-               
-                    <a href="/tags/autocomplete" title="autocomplete">
-                        autocomplete
-                    </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/element" title="element">
-                        element
-                    </a>
-               
-            
-               
-            
-               
-            
-               
-            
-               
-                    <a href="/tags/tag1" title="tag1">
-                        tag1
-                    </a>
-               
-            
-               
-                    <a href="/tags/tag2" title="tag2">
-                        tag2
-                    </a>
-               
-            
-               
-                    <a href="/tags/vue" title="vue">
-                        vue
-                    </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/%E5%9C%B0%E5%9B%BE" title="地图">
-                        地图
-                    </a>
-               
-            
-               
-                    <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F" title="小程序">
-                        小程序
-                    </a>
-               
-            
-               
-            
-               
-            
-               
-                    <a href="/tags/%E6%A0%B7%E5%BC%8F" title="样式">
-                        样式
-                    </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/%E7%BB%84%E4%BB%B6" title="组件">
-                        组件
-                    </a>
-               
-            
-               
-                    <a href="/tags/%E9%AB%98%E5%BE%B7" title="高德">
-                        高德
-                    </a>
-               
-            
-        </div>
-    </section>
-    
-
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
-        <ul class="list-inline">
-            
-            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
-            
-        </ul>
-    </section>
-    
-    
-</div>
-
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
 	</div>
 </div>
+<script type="text/javascript" src="/js/reward.js"></script>
 
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAamap-is-not-defined/" data-toggle="tooltip" data-placement="top" title="高德显示AMap is not defined">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%87%BA%E7%8E%B0this.setdata-undifined/" data-toggle="tooltip" data-placement="top" title="小程序中出现this.setdata Undifined">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/autocomplete" title="autocomplete">
+                            autocomplete
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/element" title="element">
+                            element
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/tag1" title="tag1">
+                            tag1
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tag2" title="tag2">
+                            tag2
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/vue" title="vue">
+                            vue
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E5%9C%B0%E5%9B%BE" title="地图">
+                            地图
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F" title="小程序">
+                            小程序
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E6%A0%B7%E5%BC%8F" title="样式">
+                            样式
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E7%BB%84%E4%BB%B6" title="组件">
+                            组件
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/%E9%AB%98%E5%BE%B7" title="高德">
+                            高德
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
 
 
 
@@ -600,7 +492,7 @@
             
            
                    <li>
-                       <a href='/index.xml' rel="alternate" type="application/rss+xml" title="Huoguo32 Blog" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="Huoguo32 Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
