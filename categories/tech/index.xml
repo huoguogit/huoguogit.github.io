@@ -6,7 +6,16 @@
     <description>Recent content in Tech on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小程序跳转回上个页面后,缓存/重写上个页面的表单数据</title>
+      <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%B7%B3%E8%BD%AC%E5%9B%9E%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%90%8E%E7%BC%93%E5%AD%98%E9%87%8D%E5%86%99%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%B7%B3%E8%BD%AC%E5%9B%9E%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%90%8E%E7%BC%93%E5%AD%98%E9%87%8D%E5%86%99%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</guid>
+      <description>小程序中遇到如下需求,我需要跳转到一个新的页面(日期选择界面)获取用户选择的日期,但是跳转回上一页后,会导致之前的表单数据被重置,所以需要缓</description>
+    </item>
+    
     <item>
       <title>笔记</title>
       <link>https://huoguogit.github.io/post/note/</link>
@@ -77,15 +86,6 @@
       
       <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%BC%95%E5%85%A5%E7%BB%84%E4%BB%B6%E6%97%B6cannot-read-property-name-of-undefined-typeerror/</guid>
       <description>小程序中引入组件时报错,&amp;lsquo;Cannot read property ‘name‘ of undefined TypeError&amp;rsquo; 原因:组件中的声明 properties 属性时需要声明其 属性类型 properties: { isshow: { type: Boolean, value: false }, },</description>
-    </item>
-    
-    <item>
-      <title>小程序跳转回上个页面后,缓存/重写上个页面的表单数据</title>
-      <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%B7%B3%E8%BD%AC%E5%9B%9E%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%90%8E%E7%BC%93%E5%AD%98%E9%87%8D%E5%86%99%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</link>
-      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%B7%B3%E8%BD%AC%E5%9B%9E%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%90%8E%E7%BC%93%E5%AD%98%E9%87%8D%E5%86%99%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</guid>
-      <description>小程序中遇到如下需求,我需要跳转到一个新的页面(日期选择界面)获取用户选择的日期,但是跳转回上一页后,会导致之前的表单数据被重置,所以需要缓</description>
     </item>
     
     <item>
