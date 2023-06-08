@@ -80,6 +80,15 @@
     </item>
     
     <item>
+      <title>小程序跳转回上个页面后,缓存/重写上个页面的表单数据</title>
+      <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%B7%B3%E8%BD%AC%E5%9B%9E%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%90%8E%E7%BC%93%E5%AD%98%E9%87%8D%E5%86%99%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%B7%B3%E8%BD%AC%E5%9B%9E%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%90%8E%E7%BC%93%E5%AD%98%E9%87%8D%E5%86%99%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</guid>
+      <description>小程序中遇到如下需求,我需要跳转到一个新的页面(日期选择界面)获取用户选择的日期,但是跳转回上一页后,会导致之前的表单数据被重置,所以需要缓</description>
+    </item>
+    
+    <item>
       <title>高德显示AMap is not defined</title>
       <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAamap-is-not-defined/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
