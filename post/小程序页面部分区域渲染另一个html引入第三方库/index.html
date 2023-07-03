@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="高德为信息窗体添加点击事件" />
-    <meta property="og:title" content="高德为信息窗体添加点击事件" />
-    <meta property="twitter:title" content="高德为信息窗体添加点击事件" />
+    <meta name="title" content="小程序页面部分区域渲染另一个html(引入第三方库)" />
+    <meta property="og:title" content="小程序页面部分区域渲染另一个html(引入第三方库)" />
+    <meta property="twitter:title" content="小程序页面部分区域渲染另一个html(引入第三方库)" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="火锅32, 火锅32的网络日志, 火锅32的博客,  博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>高德为信息窗体添加点击事件 | huoguo32 Blog</title>
+    <title>小程序页面部分区域渲染另一个html(引入第三方库) | huoguo32 Blog</title>
 
-    <link rel="canonical" href="/post/%E9%AB%98%E5%BE%B7%E4%B8%BA%E4%BF%A1%E6%81%AF%E7%AA%97%E4%BD%93%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6/">
+    <link rel="canonical" href="/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B5%E9%9D%A2%E9%83%A8%E5%88%86%E5%8C%BA%E5%9F%9F%E6%B8%B2%E6%9F%93%E5%8F%A6%E4%B8%80%E4%B8%AAhtml%E5%BC%95%E5%85%A5%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/">
 
     
     
@@ -170,25 +170,33 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E9%AB%98%E5%BE%B7" title="高德">
-                            高德
+                        <a class="tag" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F" title="小程序">
+                            小程序
                         </a>
                         
-                        <a class="tag" href="/tags/vue" title="vue">
-                            vue
+                        <a class="tag" href="/tags/%E5%BE%AE%E4%BF%A1" title="微信">
+                            微信
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F" title="小程序">
+                            小程序
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E5%AF%8C%E6%96%87%E6%9C%AC" title="富文本">
+                            富文本
                         </a>
                         
                     </div>
-                    <h1>高德为信息窗体添加点击事件</h1>
+                    <h1>小程序页面部分区域渲染另一个html(引入第三方库)</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
                             Posted by 
                             
-                                     &#34;huoguo32&#34;
+                                     &#34;&#34;
                              
                             on 
-                            Tuesday, April 25, 2023
+                            Monday, May 8, 2023
                             
                             
                             
@@ -214,23 +222,43 @@
                 post-container">
 
                 
-                <p>即使是用的vue，也不能使用@click为窗体添加点击事件，需要使用onclick，并且在定义了函数后，使用该函数还是会报函数未定义的错误，需要在window下添加该函数，点击时可以在原型链中找到该函数
-设置信息窗体，并为信息窗体里的函数添加点击事件</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vue" data-lang="vue"><span style="display:flex;"><span>  (markers as any).content <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">`&lt;div&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;div&gt;标题&lt;/div&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;div&gt;日期&lt;/div&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;div&gt;经纬度&lt;/div&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;div&gt;技术员电话&lt;/div&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;div style=&#34;width:100px;height:100px&#34;&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;img src=&#39;</span><span style="color:#f1fa8c">${</span>img[<span style="color:#bd93f9">0</span>]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#39; style=&#34;width:100px;height:100px&#34;/&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;/div&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;a href=&#34;</span><span style="color:#f1fa8c">${</span>img[<span style="color:#bd93f9">0</span>]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34; target=&#39;blank&#39;&gt;打开图片&lt;/a&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;button style=&#34;width:100px;height:25px;border:1px solid #a0c6f2;background-color:transparent;margin-top:5px&#34; onclick=&#34;opendata()&#34;&gt;查看装置数据&lt;/button&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;/div&gt;`</span>;
-</span></span></code></pre></div><p>然后定义所需要的函数：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vue" data-lang="vue"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">window</span>.opendata<span style="color:#ff79c6">=</span> () =&gt; {
-</span></span><span style="display:flex;"><span>  console.log(<span style="color:#f1fa8c">&#39;定义函数成功&#39;</span>) <span style="color:#6272a4">//在这里写下点击后所执行的事件
-</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>}
+                <p>微信小程序中,有个新的需求,在原来的界面中,需要显示html代码片段内容，内容是通过接口读取的服务器中的富文本内容，是html代码片段，
+rich-text组件存在一个极大的限制： 组件内屏蔽了所有节点的事件 。也就是说，在该组件内，连「预览图片」这样一个简单的功能都无法实现。
+「web-view」组件嵌套网页，通过网页展示HTML内容是兼容性最好的解决方案了。然而，因为要多加载一个页面，性能是较差的。而且需求希望的是在当前页面中的部分区域对新的页面进行渲染,web-view会强制打开一个新的页面,无法只显示在部分区域</p>
+<p>小程序默认是不支持html格式的内容显示的，会被认为是Object，无法正常的渲染出来，那我们需要显示html内容的时候，就可以通过wxParse来实现。
+首先我们在github上下载wxParse， wxParse目前虽然停止维护，但是还是能满足日常需求的，后面将介绍一下基于wxParse的，用来渲染小程序html代码片段的。
+<a href="https://blog.csdn.net/ITMyFavorite/article/details/130356541">https://blog.csdn.net/ITMyFavorite/article/details/130356541</a></p>
+<p>下面是具体的使用步骤</p>
+<p>1.在app.wxss全局样式文件中，需要引入wxParse的样式表</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>@<span style="color:#ff79c6">import</span> <span style="color:#f1fa8c">&#34;../wxParse/wxParse.wxss&#34;</span>;
+</span></span><span style="display:flex;"><span> 也可以在指定页面单独引入
+</span></span></code></pre></div><p>2.在需要加载html内容的页面对应的js文件里引入wxParse</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#ff79c6">import</span> wxParse from <span style="color:#f1fa8c">&#39;../../wxParse/wxParse.js&#39;</span>;
+</span></span></code></pre></div><p>3.通过调用WxParse.wxParse方法来设置html内容</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>Page({
+</span></span><span style="display:flex;"><span>  data<span style="color:#ff79c6">:</span> {
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  onLoad<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">var</span> that <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">this</span>;
+</span></span><span style="display:flex;"><span>    wx.request({
+</span></span><span style="display:flex;"><span>        url<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;你的接口地址&#39;</span>, 
+</span></span><span style="display:flex;"><span>        method<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;POST&#39;</span>,
+</span></span><span style="display:flex;"><span>        data<span style="color:#ff79c6">:</span> { 你的提交数据 },
+</span></span><span style="display:flex;"><span>        header<span style="color:#ff79c6">:</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#f1fa8c">&#39;content-type&#39;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;application/json&#39;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        success<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">function</span>(res) {
+</span></span><span style="display:flex;"><span>            <span style="color:#6272a4">//主要关注这里
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>            <span style="color:#8be9fd;font-style:italic">var</span> htmlPart <span style="color:#ff79c6">=</span> res.data;
+</span></span><span style="display:flex;"><span>            WxParse.wxParse(<span style="color:#f1fa8c">&#39;tips&#39;</span>, <span style="color:#f1fa8c">&#39;html&#39;</span>, htmlPart, that,<span style="color:#bd93f9">5</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>4.在页面中引用模板</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">import</span> src<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;../../wxParse/wxParse.wxml&#34;</span><span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>template is<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;wxParse&#34;</span> data<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;{{wxParseData:tips.nodes}}&#34;</span><span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>        这里要注意，其它位置都是固定的写法的，只有 tips  是在调用解析时的那个第一个参数的名称，这个是依据自己定义的。按照这样这一波操作下来，应该一波就可以看到渲染的效果了，，如果行，请检查各页面的引入情况，是否成功引入，注意使用  ..<span style="color:#ff79c6">/</span>..<span style="color:#ff79c6">/</span>  这种方式应该时，层级关系。
 </span></span></code></pre></div>
 
                 
@@ -280,13 +308,13 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/" data-toggle="tooltip" data-placement="top" title="高德加载自定义覆盖物图标本地路径问题">&larr;
+                        <a href="/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6observe%E4%B8%8D%E7%94%9F%E6%95%88/" data-toggle="tooltip" data-placement="top" title="微信小程序observe不生效">&larr;
                             Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6observe%E4%B8%8D%E7%94%9F%E6%95%88/" data-toggle="tooltip" data-placement="top" title="微信小程序observe不生效">Next
+                        <a href="/post/note/" data-toggle="tooltip" data-placement="top" title="笔记">Next
                             Post &rarr;</a>
                     </li>
                     
