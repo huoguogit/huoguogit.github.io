@@ -6,7 +6,16 @@
     <description>Recent content in Tech on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小程序设置背景图片(铺满全屏)</title>
+      <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E9%93%BA%E6%BB%A1%E5%85%A8%E5%B1%8F/</link>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E9%93%BA%E6%BB%A1%E5%85%A8%E5%B1%8F/</guid>
+      <description>微信小程序中,背景图片不支持在css中设置 background-image: url();(除非是base64的格式),所以需要添加个image标签,然后标签设置对应的样式 1.wxml</description>
+    </item>
+    
     <item>
       <title>小程序跳转回上个页面后,缓存/重写上个页面的表单数据</title>
       <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%B7%B3%E8%BD%AC%E5%9B%9E%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%90%8E%E7%BC%93%E5%AD%98%E9%87%8D%E5%86%99%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</link>
