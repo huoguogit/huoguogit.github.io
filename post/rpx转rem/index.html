@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="css设置背景色透明" />
-    <meta property="og:title" content="css设置背景色透明" />
-    <meta property="twitter:title" content="css设置背景色透明" />
+    <meta name="title" content="rpx转rem" />
+    <meta property="og:title" content="rpx转rem" />
+    <meta property="twitter:title" content="rpx转rem" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="火锅32, 火锅32的网络日志, 火锅32的博客,  博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>css设置背景色透明 | huoguo32 Blog</title>
+    <title>rpx转rem | huoguo32 Blog</title>
 
-    <link rel="canonical" href="/post/css%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E8%89%B2%E9%80%8F%E6%98%8E/">
+    <link rel="canonical" href="/post/rpx%E8%BD%ACrem/">
 
     
     
@@ -174,25 +174,25 @@
                             css
                         </a>
                         
-                        <a class="tag" href="/tags/%E9%80%8F%E6%98%8E%E5%BA%A6" title="透明度">
-                            透明度
+                        <a class="tag" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F" title="小程序">
+                            小程序
                         </a>
                         
-                        <a class="tag" href="/tags/%E6%A0%B7%E5%BC%8F" title="样式">
-                            样式
+                        <a class="tag" href="/tags/vue" title="vue">
+                            vue
                         </a>
                         
                     </div>
-                    <h1>css设置背景色透明</h1>
+                    <h1>rpx转rem</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
                             Posted by 
                             
-                                     &#34;&#34;
+                                     &#34;huoguo32&#34;
                              
                             on 
-                            Thursday, July 6, 2023
+                            Tuesday, July 11, 2023
                             
                             
                             
@@ -218,12 +218,31 @@
                 post-container">
 
                 
-                <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#6272a4">/* 设置背景色为透明 */</span>
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">transparent</span><span style="color:#ff79c6">;</span>
-</span></span></code></pre></div><p>值得注意的是，透明度并非指完全透明，而是会透出下一层的颜色或图片。如果想要完全透明，则可以设置为rgba(0,0,0,0)，其中最后一个参数0表示完全透明。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#6272a4">/* 设置背景色为透明 */</span>
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">rgba</span><span style="color:#ff79c6">(</span><span style="color:#ff79c6">0</span><span style="color:#ff79c6">,</span><span style="color:#ff79c6">0</span><span style="color:#ff79c6">,</span><span style="color:#ff79c6">0</span><span style="color:#ff79c6">,</span><span style="color:#ff79c6">0</span><span style="color:#ff79c6">);</span>
-</span></span></code></pre></div>
+                <p>需求:把小程序页面改成h5页面,其中小程序的rpx无法直接用在h5页面,所以需要转换成rem
+相关解决库:
+<a href="https://github.com/landn172/postcss-rpxtorem">https://github.com/landn172/postcss-rpxtorem</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#6272a4">//1.新建文件夹
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">//2.初始化npm环境:npm init -y
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">//3.安装相应的工具库:npm install postcss-rpxtorem --save-dev
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">//4.创建所需的转换的css文件:main.css
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">//5.新建js文件:rpx2rem.js 执行转换代码
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">var</span> fs <span style="color:#ff79c6">=</span> require(<span style="color:#f1fa8c">&#39;fs&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">var</span> postcss <span style="color:#ff79c6">=</span> require(<span style="color:#f1fa8c">&#39;postcss&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">var</span> rpxtorem <span style="color:#ff79c6">=</span> require(<span style="color:#f1fa8c">&#39;postcss-rpxtorem&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">var</span> css <span style="color:#ff79c6">=</span> fs.readFileSync(<span style="color:#f1fa8c">&#39;main.css&#39;</span>, <span style="color:#f1fa8c">&#39;utf8&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">var</span> options <span style="color:#ff79c6">=</span> {
+</span></span><span style="display:flex;"><span>    replace<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">var</span> processedCss <span style="color:#ff79c6">=</span> postcss(rpxtorem(options)).process(css).css;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fs.writeFile(<span style="color:#f1fa8c">&#39;main-rem.css&#39;</span>, processedCss, <span style="color:#8be9fd;font-style:italic">function</span> (err) {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">if</span> (err) {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">throw</span> err;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  console.log(<span style="color:#f1fa8c">&#39;Rem file written.&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">//6.执行转换命令:node rpx2rem.js
+</span></span></span></code></pre></div>
 
                 
                 
@@ -272,15 +291,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E9%93%BA%E6%BB%A1%E5%85%A8%E5%B1%8F/" data-toggle="tooltip" data-placement="top" title="小程序设置背景图片(铺满全屏)">&larr;
+                        <a href="/post/css%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E8%89%B2%E9%80%8F%E6%98%8E/" data-toggle="tooltip" data-placement="top" title="css设置背景色透明">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/rpx%E8%BD%ACrem/" data-toggle="tooltip" data-placement="top" title="rpx转rem">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 

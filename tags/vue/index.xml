@@ -6,7 +6,16 @@
     <description>Recent content in vue on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rpx转rem</title>
+      <link>https://huoguogit.github.io/post/rpx%E8%BD%ACrem/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/rpx%E8%BD%ACrem/</guid>
+      <description>需求:把小程序页面改成h5页面,其中小程序的rpx无法直接用在h5页面,所以需要转换成rem 相关解决库: https://github.com/landn172/postcss-rpxtorem //1.新建文件夹 //2.初始化n</description>
+    </item>
+    
     <item>
       <title>高德为信息窗体添加点击事件</title>
       <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E4%B8%BA%E4%BF%A1%E6%81%AF%E7%AA%97%E4%BD%93%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6/</link>

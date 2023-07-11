@@ -6,7 +6,16 @@
     <description>Recent content in 小程序 on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rpx转rem</title>
+      <link>https://huoguogit.github.io/post/rpx%E8%BD%ACrem/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/rpx%E8%BD%ACrem/</guid>
+      <description>需求:把小程序页面改成h5页面,其中小程序的rpx无法直接用在h5页面,所以需要转换成rem 相关解决库: https://github.com/landn172/postcss-rpxtorem //1.新建文件夹 //2.初始化n</description>
+    </item>
+    
     <item>
       <title>小程序设置背景图片(铺满全屏)</title>
       <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E9%93%BA%E6%BB%A1%E5%85%A8%E5%B1%8F/</link>
