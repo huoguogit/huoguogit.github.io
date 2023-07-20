@@ -6,7 +6,16 @@
     <description>Recent content in vue on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>打包时替换成相对路径</title>
+      <link>https://huoguogit.github.io/post/%E6%89%93%E5%8C%85%E6%97%B6%E6%9B%BF%E6%8D%A2%E6%88%90%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/%E6%89%93%E5%8C%85%E6%97%B6%E6%9B%BF%E6%8D%A2%E6%88%90%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</guid>
+      <description>具体思路参考这篇文章:https://www.yii666.com/blog/296671.html 在vue项目中,通过npm build 打包的文件,</description>
+    </item>
+    
     <item>
       <title>rpx转rem</title>
       <link>https://huoguogit.github.io/post/rpx%E8%BD%ACrem/</link>
