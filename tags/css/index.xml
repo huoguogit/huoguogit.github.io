@@ -6,7 +6,25 @@
     <description>Recent content in css on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>移动端兼容:Input光标</title>
+      <link>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9input%E5%85%89%E6%A0%87/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9input%E5%85%89%E6%A0%87/</guid>
+      <description>https://blog.csdn.net/weixin_64355008/article/details/127824880 ios和安卓中发现input的光标高度不一致 //. IOS的input光标高度问题 原因: 因为我们习惯用height和line-height设置高</description>
+    </item>
+    
+    <item>
+      <title>移动端兼容:输入框键盘弹起覆盖上面页面</title>
+      <link>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9%E8%BE%93%E5%85%A5%E6%A1%86%E9%94%AE%E7%9B%98%E5%BC%B9%E8%B5%B7%E8%A6%86%E7%9B%96%E4%B8%8A%E9%9D%A2%E9%A1%B5%E9%9D%A2/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9%E8%BE%93%E5%85%A5%E6%A1%86%E9%94%AE%E7%9B%98%E5%BC%B9%E8%B5%B7%E8%A6%86%E7%9B%96%E4%B8%8A%E9%9D%A2%E9%A1%B5%E9%9D%A2/</guid>
+      <description>移动端项目中,发现输入框键盘会弹起覆盖上面页面 //核心解决思路是用过Input的focue和blur事件来调整. //当键盘弹起时,将上面区域</description>
+    </item>
+    
     <item>
       <title>rpx转rem</title>
       <link>https://huoguogit.github.io/post/rpx%E8%BD%ACrem/</link>
