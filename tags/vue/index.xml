@@ -53,6 +53,15 @@
     </item>
     
     <item>
+      <title>vue-router push 不更新缓存页面.</title>
+      <link>https://huoguogit.github.io/post/vue-router-push-%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%BC%93%E5%AD%98%E9%A1%B5%E9%9D%A2/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/vue-router-push-%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%BC%93%E5%AD%98%E9%A1%B5%E9%9D%A2/</guid>
+      <description>在开发中遇到一个问题,第一步,搜索页面点击跳转到某一个详情后,希望可以返回时缓存搜索页面.直接回到搜索结果还在的页面,而不是重新加载页面.这</description>
+    </item>
+    
+    <item>
       <title>vue3中的reactive显示值</title>
       <link>https://huoguogit.github.io/post/vue3%E4%B8%AD%E7%9A%84reactive%E6%98%BE%E7%A4%BA%E5%80%BC/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
