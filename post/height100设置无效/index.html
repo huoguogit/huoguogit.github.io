@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="vue routerbeforeLeave 中获取不到this" />
-    <meta property="og:title" content="vue routerbeforeLeave 中获取不到this" />
-    <meta property="twitter:title" content="vue routerbeforeLeave 中获取不到this" />
+    <meta name="title" content="height:100%设置无效" />
+    <meta property="og:title" content="height:100%设置无效" />
+    <meta property="twitter:title" content="height:100%设置无效" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="火锅32, 火锅32的网络日志, 火锅32的博客,  博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>vue routerbeforeLeave 中获取不到this | huoguo32 Blog</title>
+    <title>height:100%设置无效 | huoguo32 Blog</title>
 
-    <link rel="canonical" href="/post/vue-routerbeforeleave-%E4%B8%AD%E8%8E%B7%E5%8F%96%E4%B8%8D%E5%88%B0this/">
+    <link rel="canonical" href="/post/height100%E8%AE%BE%E7%BD%AE%E6%97%A0%E6%95%88/">
 
     
     
@@ -170,8 +170,8 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/vue-router" title="vue-router">
-                            vue-router
+                        <a class="tag" href="/tags/css" title="css">
+                            css
                         </a>
                         
                         <a class="tag" href="/tags/vue" title="vue">
@@ -179,7 +179,7 @@
                         </a>
                         
                     </div>
-                    <h1>vue routerbeforeLeave 中获取不到this</h1>
+                    <h1>height:100%设置无效</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
@@ -214,15 +214,17 @@
                 post-container">
 
                 
-                <p>在监听页面离开的方法 beforeRouteLeave 中访问 this 获取不到,</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span> beforeRouteLeave(){
-</span></span><span style="display:flex;"><span>    console.log(<span style="color:#ff79c6">this</span>) <span style="color:#6272a4">// undefined
-</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  },
-</span></span></code></pre></div><p>原因:箭头函数内部的 this 指向问题，所以要换成以下写法</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  beforeRouteLeave<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">function</span> (to, from, next) {
-</span></span><span style="display:flex;"><span>    console.log(<span style="color:#ff79c6">this</span>) <span style="color:#6272a4">// undefined
-</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    next()
-</span></span><span style="display:flex;"><span>  },
+                <p>经常遇到给盒子设置 height:100%无效的情况,原因是父元素没有设置高度,所以子元素的高度无法撑开父元素,所以设置 height:100%无效
+除了常规的给父盒子设置高度以外,还可以给父盒子设置绝对定位
+<a href="https://www.23bei.com/article/160.html">https://www.23bei.com/article/160.html</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">box</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">/* position: fixed; */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">position</span>: <span style="color:#ff79c6">absolute</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">top</span>: <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">left</span>: <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">//</span><span style="color:#ff79c6">6</span>.<span style="color:#50fa7b">执行转换命令</span>:node <span style="color:#ff79c6">rpx2rem</span>.<span style="color:#50fa7b">js</span>
 </span></span></code></pre></div>
 
                 
@@ -272,15 +274,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/vue-router-push-%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%BC%93%E5%AD%98%E9%A1%B5%E9%9D%A2/" data-toggle="tooltip" data-placement="top" title="vue-router push 不更新缓存页面.">&larr;
+                        <a href="/post/vue-routerbeforeleave-%E4%B8%AD%E8%8E%B7%E5%8F%96%E4%B8%8D%E5%88%B0this/" data-toggle="tooltip" data-placement="top" title="vue routerbeforeLeave 中获取不到this">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/height100%E8%AE%BE%E7%BD%AE%E6%97%A0%E6%95%88/" data-toggle="tooltip" data-placement="top" title="height:100%设置无效">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 

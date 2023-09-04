@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="vue" />
-    <meta property="og:title" content="vue" />
-    <meta property="twitter:title" content="vue" />
+    <meta name="title" content="css" />
+    <meta property="og:title" content="css" />
+    <meta property="twitter:title" content="css" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="火锅32, 火锅32的网络日志, 火锅32的博客,  博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>vue | huoguo32 Blog</title>
+    <title>css | huoguo32 Blog</title>
 
-    <link rel="canonical" href="/tags/vue/">
+    <link rel="canonical" href="/tags/css/">
 
     
     
@@ -187,112 +187,20 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E4%B8%BA%E4%BF%A1%E6%81%AF%E7%AA%97%E4%BD%93%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6/">
+    <a href="https://huoguogit.github.io/post/%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E5%90%8E%E6%8D%A2%E8%A1%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F-copy/">
         <h2 class="post-title">
-            高德为信息窗体添加点击事件
+            文字超出后换行(小程序)
         </h2>
 	
         <div class="post-content-preview">
 	
-            即使是用的vue，也不能使用@click为窗体添加点击事件，需要使用onclick，并且在定义了函数后，使用该函数还是会报函数未定义的错误，
+            可以使用CSS的word-wrap和word-break属性来实现中文自动换行。 word-wrap属性用于指定是否允许单词内换行，取值包括n
        
         </div>
     </a>
     <p class="post-meta">
     
-        Posted by      &#34;huoguo32&#34; on Tuesday, April 25, 2023
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/">
-        <h2 class="post-title">
-            高德加载自定义覆盖物图标本地路径问题
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            高德地图渲染点覆盖物时导入本地图标发现导入的图标不会生效 传统的写法 image: &#39;//vdata.amap.com/icons/b18/1/2.png&#39;, //或者 require(‘./xxxx’) 在vue3中都没用,会提示r
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;&#34; on Wednesday, March 22, 2023
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/">
-        <h2 class="post-title">
-            高德引入AmapUI,
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            高德地图除了引入传统必须得js api,还可以引入组件库AMapUI,可以使用下面的一些基础控件 https://lbs.amap.com/api/amap-ui/reference-amap-ui/control/basiccontrol 首先安装库 npm install @amap/amapui-wrapper //或者 yarn add @amap/amapui-wrapper 引入相关文件 ​
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;&#34; on Wednesday, March 22, 2023
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/vue3%E4%B8%AD%E7%9A%84reactive%E6%98%BE%E7%A4%BA%E5%80%BC/">
-        <h2 class="post-title">
-            vue3中的reactive显示值
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            vue3中reactive一般是用来定义响应式数据对象的,如果想要查看这个对象的值,不需要使用.value,直接打印就可以了 const state = reactive({ count: 0 }) console.log(state.count)
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;&#34; on Wednesday, March 15, 2023
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAamap-is-not-defined/">
-        <h2 class="post-title">
-            高德显示AMap is not defined
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            高德在vue中常见的的组件加载问题,AMap is not defined,直接这么写会报错, const districtSearch = new AMap.DistrictSearch({ subdistrict: 1, extensions: &#39;all&#39;, level: &#39;city&#39;, showbiz: false, city }) districtSearch.search(city, (status, result) =&gt; { console.log(city, status, result) if (status === &#39;complete&#39;) { districtList.value
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;huoguo32&#34; on Wednesday, March 15, 2023
+        Posted by      &#34;&#34; on Tuesday, March 7, 2023
         
         
     
@@ -309,13 +217,9 @@
 <ul class="pager" data-pagefind-ignore="all">
     
     <li class="previous">
-        <a href="/tags/vue/">&larr; Newer Posts</a>
+        <a href="/tags/css/">&larr; Newer Posts</a>
     </li>
     
-    
-    <li class="next">
-        <a href="/tags/vue/page/3/">Older Posts &rarr;</a>
-    </li>
     
 </ul>
 
@@ -649,7 +553,7 @@
             
            
                    <li>
-                       <a href='/tags/vue/index.xml' rel="alternate" type="application/rss+xml" title="Huoguo32 Blog" >
+                       <a href='/tags/css/index.xml' rel="alternate" type="application/rss+xml" title="Huoguo32 Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
