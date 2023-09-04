@@ -6,7 +6,16 @@
     <description>Recent content in Tech on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vue routerbeforeLeave 中获取不到this</title>
+      <link>https://huoguogit.github.io/post/vue-routerbeforeleave-%E4%B8%AD%E8%8E%B7%E5%8F%96%E4%B8%8D%E5%88%B0this/</link>
+      <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/vue-routerbeforeleave-%E4%B8%AD%E8%8E%B7%E5%8F%96%E4%B8%8D%E5%88%B0this/</guid>
+      <description>在监听页面离开的方法 beforeRouteLeave 中访问 this 获取不到, beforeRouteLeave(){ console.log(this) // undefined }, 原因:箭头函数内部的 this 指向问题，所以要换成以下写法 beforeRouteLeave: function (to, from, next) { console.log(this) // undefined next() },</description>
+    </item>
+    
     <item>
       <title>vue-router push 不更新缓存页面.</title>
       <link>https://huoguogit.github.io/post/vue-router-push-%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%BC%93%E5%AD%98%E9%A1%B5%E9%9D%A2/</link>

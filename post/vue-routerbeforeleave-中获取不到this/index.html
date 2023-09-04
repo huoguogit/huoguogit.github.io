@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="vue3中的reactive显示值" />
-    <meta property="og:title" content="vue3中的reactive显示值" />
-    <meta property="twitter:title" content="vue3中的reactive显示值" />
+    <meta name="title" content="vue routerbeforeLeave 中获取不到this" />
+    <meta property="og:title" content="vue routerbeforeLeave 中获取不到this" />
+    <meta property="twitter:title" content="vue routerbeforeLeave 中获取不到this" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="火锅32, 火锅32的网络日志, 火锅32的博客,  博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>vue3中的reactive显示值 | huoguo32 Blog</title>
+    <title>vue routerbeforeLeave 中获取不到this | huoguo32 Blog</title>
 
-    <link rel="canonical" href="/post/vue3%E4%B8%AD%E7%9A%84reactive%E6%98%BE%E7%A4%BA%E5%80%BC/">
+    <link rel="canonical" href="/post/vue-routerbeforeleave-%E4%B8%AD%E8%8E%B7%E5%8F%96%E4%B8%8D%E5%88%B0this/">
 
     
     
@@ -170,21 +170,25 @@
                 <div class="post-heading">
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/vue-router" title="vue-router">
+                            vue-router
+                        </a>
+                        
                         <a class="tag" href="/tags/vue" title="vue">
                             vue
                         </a>
                         
                     </div>
-                    <h1>vue3中的reactive显示值</h1>
+                    <h1>vue routerbeforeLeave 中获取不到this</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
                             Posted by 
                             
-                                     &#34;&#34;
+                                     &#34;huoguo32&#34;
                              
                             on 
-                            Wednesday, March 15, 2023
+                            Monday, September 4, 2023
                             
                             
                             
@@ -210,12 +214,18 @@
                 post-container">
 
                 
-                <p>vue3中reactive一般是用来定义响应式数据对象的,如果想要查看这个对象的值,不需要使用.value,直接打印就可以了</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vue" data-lang="vue"><span style="display:flex;"><span><span style="color:#ff79c6">const</span> state <span style="color:#ff79c6">=</span> reactive({
-</span></span><span style="display:flex;"><span>  count<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>
-</span></span><span style="display:flex;"><span>})
-</span></span><span style="display:flex;"><span>console.log(state.count) <span style="color:#6272a4">// 0
-</span></span></span></code></pre></div>
+                <p>在监听页面离开的方法 beforeRouteLeave 中访问 this 获取不到,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span> beforeRouteLeave(){
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#ff79c6">this</span>) <span style="color:#6272a4">// undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  },
+</span></span></code></pre></div><p>原因:箭头函数内部的 this 指向问题，所以要换成以下写法</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  beforeRouteLeave<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">function</span> (to, from, next) {
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#ff79c6">this</span>) <span style="color:#6272a4">// undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    next()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  },
+</span></span></code></pre></div>
 
                 
                 
@@ -264,15 +274,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%87%BA%E7%8E%B0this.setdata-undifined/" data-toggle="tooltip" data-placement="top" title="小程序中出现this.setdata Undifined">&larr;
+                        <a href="/post/vue-router-push-%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%BC%93%E5%AD%98%E9%A1%B5%E9%9D%A2/" data-toggle="tooltip" data-placement="top" title="vue-router push 不更新缓存页面.">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/" data-toggle="tooltip" data-placement="top" title="高德引入AmapUI,">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 

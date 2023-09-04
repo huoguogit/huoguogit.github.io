@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.118.2">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="vue" />
+    <meta property="og:title" content="vue" />
+    <meta property="twitter:title" content="vue" />
     
 
     
@@ -35,9 +34,9 @@
     <meta name="keyword"  content="火锅32, 火锅32的网络日志, 火锅32的博客,  博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Huoguo32 Blog | huoguo32 Blog</title>
+    <title>vue | huoguo32 Blog</title>
 
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="/tags/vue/">
 
     
     
@@ -188,112 +187,20 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://huoguogit.github.io/post/item2%E7%BB%88%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/">
+    <a href="https://huoguogit.github.io/post/%E4%BF%AE%E6%94%B9%E7%BB%84%E4%BB%B6%E4%B8%AD%E7%9A%84%E6%A0%B7%E5%BC%8Fv-deep/">
         <h2 class="post-title">
-            item2终端常用快捷键.
+            修改组件中的样式:v-deep
         </h2>
 	
         <div class="post-content-preview">
 	
-            因为老是出现item2报错后不知道怎么清屏,每次都重新退出浪费时间,所以记录下常用的快捷键 &lt;!-- 常用 --&gt; 清屏 command+k 到行首control + a 到行尾 control + e
+            element等组件库中的组件需要通过样式穿透修改.找到他们类名,一步步穿透下去 你可以使用 ::v-deep 或者 /deep/ 来覆盖 Element Plus 组件的样式。这两种方式的作用相同
        
         </div>
     </a>
     <p class="post-meta">
     
-        Posted by      &#34;huoguo32&#34; on Thursday, July 13, 2023
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/mac%E8%AE%BE%E7%BD%AE%E7%94%A8vscode%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E5%A4%B9/">
-        <h2 class="post-title">
-            mac设置用vscode打开文件夹
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            mac中利用自动操作,实现右键利用vscode打开目标文件夹 https://blog.csdn.net/Shao_yihao/article/details/127834604 //shall脚本代码 for f in &#34;$@&#34; do open -a &#34;Visual Studio Code&#34; &#34;$f&#34; done 注意:该代码能运行的核心在于右上
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;huoguo32&#34; on Thursday, July 13, 2023
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/rpx%E8%BD%ACrem/">
-        <h2 class="post-title">
-            rpx转rem
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            需求:把小程序页面改成h5页面,其中小程序的rpx无法直接用在h5页面,所以需要转换成rem 相关解决库: https://github.com/landn172/postcss-rpxtorem //1.新建文件夹 //2.初始化n
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;huoguo32&#34; on Tuesday, July 11, 2023
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/css%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E8%89%B2%E9%80%8F%E6%98%8E/">
-        <h2 class="post-title">
-            css设置背景色透明
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            /* 设置背景色为透明 */ background-color: transparent; 值得注意的是，透明度并非指完全透明，而是会透出下一层的颜色或图片。如果想要完全透明，则可以设置为rgba(0,0,0
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;&#34; on Thursday, July 6, 2023
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E9%93%BA%E6%BB%A1%E5%85%A8%E5%B1%8F/">
-        <h2 class="post-title">
-            小程序设置背景图片(铺满全屏)
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            微信小程序中,背景图片不支持在css中设置 background-image: url();(除非是base64的格式),所以需要添加个image标签,然后标签设置对应的样式 1.wxml
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by      &#34;&#34; on Monday, July 3, 2023
+        Posted by      &#34;huoguo32&#34; on Monday, March 6, 2023
         
         
     
@@ -310,13 +217,9 @@
 <ul class="pager" data-pagefind-ignore="all">
     
     <li class="previous">
-        <a href="/">&larr; Newer Posts</a>
+        <a href="/tags/vue/page/3/">&larr; Newer Posts</a>
     </li>
     
-    
-    <li class="next">
-        <a href="/page/3/">Older Posts &rarr;</a>
-    </li>
     
 </ul>
 
@@ -650,7 +553,7 @@
             
            
                    <li>
-                       <a href='/index.xml' rel="alternate" type="application/rss+xml" title="Huoguo32 Blog" >
+                       <a href='/tags/vue/index.xml' rel="alternate" type="application/rss+xml" title="Huoguo32 Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
