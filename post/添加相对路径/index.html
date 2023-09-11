@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="移动端兼容:输入框键盘弹起覆盖上面页面" />
-    <meta property="og:title" content="移动端兼容:输入框键盘弹起覆盖上面页面" />
-    <meta property="twitter:title" content="移动端兼容:输入框键盘弹起覆盖上面页面" />
+    <meta name="title" content="vite打包图片素材丢失/添加相对路径" />
+    <meta property="og:title" content="vite打包图片素材丢失/添加相对路径" />
+    <meta property="twitter:title" content="vite打包图片素材丢失/添加相对路径" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="火锅32, 火锅32的网络日志, 火锅32的博客,  博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>移动端兼容:输入框键盘弹起覆盖上面页面 | huoguo32 Blog</title>
+    <title>vite打包图片素材丢失/添加相对路径 | huoguo32 Blog</title>
 
-    <link rel="canonical" href="/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9%E8%BE%93%E5%85%A5%E6%A1%86%E9%94%AE%E7%9B%98%E5%BC%B9%E8%B5%B7%E8%A6%86%E7%9B%96%E4%B8%8A%E9%9D%A2%E9%A1%B5%E9%9D%A2/">
+    <link rel="canonical" href="/post/%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/">
 
     
     
@@ -170,29 +170,25 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/css" title="css">
-                            css
+                        <a class="tag" href="/tags/vite" title="vite">
+                            vite
                         </a>
                         
-                        <a class="tag" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF" title="移动端">
-                            移动端
-                        </a>
-                        
-                        <a class="tag" href="/tags/%E5%85%BC%E5%AE%B9" title="兼容">
-                            兼容
+                        <a class="tag" href="/tags/vue" title="vue">
+                            vue
                         </a>
                         
                     </div>
-                    <h1>移动端兼容:输入框键盘弹起覆盖上面页面</h1>
+                    <h1>vite打包图片素材丢失/添加相对路径</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
                             Posted by 
                             
-                                     &#34;&#34;
+                                     &#34;huoguo32&#34;
                              
                             on 
-                            Tuesday, August 1, 2023
+                            Monday, September 11, 2023
                             
                             
                             
@@ -218,27 +214,16 @@
                 post-container">
 
                 
-                <p>移动端项目中,发现输入框键盘会弹起覆盖上面页面</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vue" data-lang="vue"><span style="display:flex;"><span><span style="color:#6272a4">//核心解决思路是用过Input的focue和blur事件来调整.
-</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">//当键盘弹起时,将上面区域的.Dialogbox设置一个比较小的高度,这样顶起来的输入框就不会覆盖到Dialogbox上面的区域了
-</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span> focusAdjustInput() {
-</span></span><span style="display:flex;"><span>      <span style="color:#6272a4">//为了处理键盘弹起时,Dialogbox的高度变化,将其设置为固定高度
-</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>      <span style="color:#8be9fd;font-style:italic">let</span> Dialogbox <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">document</span>.getElementsByClassName(<span style="color:#f1fa8c">&#39;Dialogbox&#39;</span>)[<span style="color:#bd93f9">0</span>]
-</span></span><span style="display:flex;"><span>      <span style="color:#6272a4">//修改.Dialogbo的高度
-</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>       Dialogbox.style.height <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;30vh&#39;</span>   
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span><span style="color:#6272a4">//当输入完成后,键盘收齐,将Dialogbox的高度恢复正常
-</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    blurAdjustInput() {
-</span></span><span style="display:flex;"><span>      <span style="color:#6272a4">//blur触发,软键盘收齐,将Dialogbox的高度恢复正常
-</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>      <span style="color:#8be9fd;font-style:italic">let</span> Dialogbox <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">document</span>.getElementsByClassName(<span style="color:#f1fa8c">&#39;Dialogbox&#39;</span>)[<span style="color:#bd93f9">0</span>]
-</span></span><span style="display:flex;"><span>      <span style="color:#6272a4">//修改.Dialogbo的高度
-</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>      Dialogbox.style.height <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>    },
-</span></span></code></pre></div><p>
-  <img src="https://raw.githubusercontent.com/huoguogit/blogImage/main/image-20230801135617959.png" alt="image-20230801135617959">
-
-</p>
-
+                <p>vite如果引入了图片资源,那么在打包过程后,会丢失图片,解决方法:
+<a href="https://blog.csdn.net/m0_73845616/article/details/129741099">https://blog.csdn.net/m0_73845616/article/details/129741099</a>
+直接方法3搞定:
+把assest文件夹复制一份到public文件夹下,public文件夹下的文件不会被打包,所以图片就不会丢失了</p>
+<p>同时,如果需要给打包的资源添加相对路径&quot;./&quot;
+在vite.config.js中添加:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff79c6">export</span> <span style="color:#ff79c6">default</span> defineConfig({
+</span></span><span style="display:flex;"><span>  base<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;./&#39;</span>,
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div>
 
                 
                 
@@ -287,15 +272,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/%E6%89%93%E5%8C%85%E6%97%B6%E6%9B%BF%E6%8D%A2%E6%88%90%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/" data-toggle="tooltip" data-placement="top" title="打包时替换成相对路径">&larr;
+                        <a href="/post/height100%E8%AE%BE%E7%BD%AE%E6%97%A0%E6%95%88/" data-toggle="tooltip" data-placement="top" title="height:100%设置无效">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9input%E5%85%89%E6%A0%87/" data-toggle="tooltip" data-placement="top" title="移动端兼容:Input光标">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 

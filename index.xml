@@ -6,7 +6,16 @@
     <description>Recent content on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vite打包图片素材丢失/添加相对路径</title>
+      <link>https://huoguogit.github.io/post/%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://huoguogit.github.io/post/%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</guid>
+      <description>vite如果引入了图片资源,那么在打包过程后,会丢失图片,解决方法: https://blog.csdn.net/m0_73845616/article/details/129741099 直接方法3搞定: 把assest文件夹复制一份到public文件夹下,p</description>
+    </item>
+    
     <item>
       <title>height:100%设置无效</title>
       <link>https://huoguogit.github.io/post/height100%E8%AE%BE%E7%BD%AE%E6%97%A0%E6%95%88/</link>
