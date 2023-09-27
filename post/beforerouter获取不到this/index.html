@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="vue routerbeforeLeave 中获取不到this" />
-    <meta property="og:title" content="vue routerbeforeLeave 中获取不到this" />
-    <meta property="twitter:title" content="vue routerbeforeLeave 中获取不到this" />
+    <meta name="title" content="vue routerbeforeLeave/Enter中获取不到this" />
+    <meta property="og:title" content="vue routerbeforeLeave/Enter中获取不到this" />
+    <meta property="twitter:title" content="vue routerbeforeLeave/Enter中获取不到this" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="火锅32, 火锅32的网络日志, 火锅32的博客,  博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>vue routerbeforeLeave 中获取不到this | huoguo32 Blog</title>
+    <title>vue routerbeforeLeave/Enter中获取不到this | huoguo32 Blog</title>
 
-    <link rel="canonical" href="/post/vue-routerbeforeleave-%E4%B8%AD%E8%8E%B7%E5%8F%96%E4%B8%8D%E5%88%B0this/">
+    <link rel="canonical" href="/post/beforerouter%E8%8E%B7%E5%8F%96%E4%B8%8D%E5%88%B0this/">
 
     
     
@@ -179,7 +179,7 @@
                         </a>
                         
                     </div>
-                    <h1>vue routerbeforeLeave 中获取不到this</h1>
+                    <h1>vue routerbeforeLeave/Enter中获取不到this</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
@@ -223,7 +223,18 @@
 </span></span><span style="display:flex;"><span>    console.log(<span style="color:#ff79c6">this</span>) <span style="color:#6272a4">// undefined
 </span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    next()
 </span></span><span style="display:flex;"><span>  },
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>beforeRouteEnter(to, from, next) {
+</span></span><span style="display:flex;"><span>    next((vm) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">if</span> (from.name <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;sendFile&#34;</span>) {
+</span></span><span style="display:flex;"><span>        vm.getDetail();
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>  },
+</span></span></code></pre></div><p>beforeRouteEnter找不到原因是没有this，在你使用此钩子的时候，你的页面还没有加载呢，所以肯定拿不到当前的this了。</p>
+<p>那么如果我想要这么做，应该如何处理呢？</p>
+<p>其实vue那么成熟的框架人家早就想好了。</p>
+<p>next可以传入一个回调，对于接下来的操作，而参数就是当前的vm实例，也就是当前的this呐。</p>
+
 
                 
                 
