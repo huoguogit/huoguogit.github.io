@@ -6,60 +6,49 @@
     <description>Recent content in css on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huoguogit.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>height:100%设置无效</title>
       <link>https://huoguogit.github.io/post/height100%E8%AE%BE%E7%BD%AE%E6%97%A0%E6%95%88/</link>
       <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/height100%E8%AE%BE%E7%BD%AE%E6%97%A0%E6%95%88/</guid>
       <description>经常遇到给盒子设置 height:100%无效的情况,原因是父元素没有设置高度,所以子元素的高度无法撑开父元素,所以设置 height:100%</description>
     </item>
-    
     <item>
       <title>移动端兼容:Input光标</title>
       <link>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9input%E5%85%89%E6%A0%87/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9input%E5%85%89%E6%A0%87/</guid>
       <description>https://blog.csdn.net/weixin_64355008/article/details/127824880 ios和安卓中发现input的光标高度不一致 //. IOS的input光标高度问题 原因: 因为我们习惯用height和line-height设置高</description>
     </item>
-    
     <item>
       <title>移动端兼容:输入框键盘弹起覆盖上面页面</title>
       <link>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9%E8%BE%93%E5%85%A5%E6%A1%86%E9%94%AE%E7%9B%98%E5%BC%B9%E8%B5%B7%E8%A6%86%E7%9B%96%E4%B8%8A%E9%9D%A2%E9%A1%B5%E9%9D%A2/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9%E8%BE%93%E5%85%A5%E6%A1%86%E9%94%AE%E7%9B%98%E5%BC%B9%E8%B5%B7%E8%A6%86%E7%9B%96%E4%B8%8A%E9%9D%A2%E9%A1%B5%E9%9D%A2/</guid>
       <description>移动端项目中,发现输入框键盘会弹起覆盖上面页面 //核心解决思路是用过Input的focue和blur事件来调整. //当键盘弹起时,将上面区域</description>
     </item>
-    
     <item>
       <title>rpx转rem</title>
       <link>https://huoguogit.github.io/post/rpx%E8%BD%ACrem/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/rpx%E8%BD%ACrem/</guid>
       <description>需求:把小程序页面改成h5页面,其中小程序的rpx无法直接用在h5页面,所以需要转换成rem 相关解决库: https://github.com/landn172/postcss-rpxtorem //1.新建文件夹 //2.初始化n</description>
     </item>
-    
     <item>
       <title>css设置背景色透明</title>
       <link>https://huoguogit.github.io/post/css%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E8%89%B2%E9%80%8F%E6%98%8E/</link>
       <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/css%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E8%89%B2%E9%80%8F%E6%98%8E/</guid>
       <description>/* 设置背景色为透明 */ background-color: transparent; 值得注意的是，透明度并非指完全透明，而是会透出下一层的颜色或图片。如果想要完全透明，则可以设置为rgba(0,0,0</description>
     </item>
-    
     <item>
       <title>文字超出后换行(小程序)</title>
       <link>https://huoguogit.github.io/post/%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E5%90%8E%E6%8D%A2%E8%A1%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F-copy/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E5%90%8E%E6%8D%A2%E8%A1%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F-copy/</guid>
       <description>可以使用CSS的word-wrap和word-break属性来实现中文自动换行。 word-wrap属性用于指定是否允许单词内换行，取值包括n</description>
     </item>
-    
   </channel>
 </rss>

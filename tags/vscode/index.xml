@@ -6,15 +6,14 @@
     <description>Recent content in vscode on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huoguogit.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mac设置用vscode打开文件夹</title>
       <link>https://huoguogit.github.io/post/mac%E8%AE%BE%E7%BD%AE%E7%94%A8vscode%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/mac%E8%AE%BE%E7%BD%AE%E7%94%A8vscode%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
       <description>mac中利用自动操作,实现右键利用vscode打开目标文件夹 https://blog.csdn.net/Shao_yihao/article/details/127834604 //shall脚本代码 for f in &amp;#34;$@&amp;#34; do open -a &amp;#34;Visual Studio Code&amp;#34; &amp;#34;$f&amp;#34; done 注意:该代码能运行的核心在于右上</description>
     </item>
-    
   </channel>
 </rss>

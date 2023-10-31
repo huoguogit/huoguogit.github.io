@@ -6,312 +6,245 @@
     <description>Recent content in Tech on Huoguo32 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://huoguogit.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huoguogit.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vite打包图片素材丢失/添加相对路径</title>
       <link>https://huoguogit.github.io/post/%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</guid>
       <description>vite如果引入了图片资源,那么在打包过程后,会丢失图片,解决方法: https://blog.csdn.net/m0_73845616/article/details/129741099 直接方法3搞定: 把assest文件夹复制一份到public文件夹下,p</description>
     </item>
-    
     <item>
       <title>height:100%设置无效</title>
       <link>https://huoguogit.github.io/post/height100%E8%AE%BE%E7%BD%AE%E6%97%A0%E6%95%88/</link>
       <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/height100%E8%AE%BE%E7%BD%AE%E6%97%A0%E6%95%88/</guid>
       <description>经常遇到给盒子设置 height:100%无效的情况,原因是父元素没有设置高度,所以子元素的高度无法撑开父元素,所以设置 height:100%</description>
     </item>
-    
     <item>
       <title>vue routerbeforeLeave/Enter中获取不到this</title>
       <link>https://huoguogit.github.io/post/beforerouter%E8%8E%B7%E5%8F%96%E4%B8%8D%E5%88%B0this/</link>
       <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/beforerouter%E8%8E%B7%E5%8F%96%E4%B8%8D%E5%88%B0this/</guid>
       <description>在监听页面离开的方法 beforeRouteLeave 中访问 this 获取不到, beforeRouteLeave(){ console.log(this) // undefined }, 原因:箭头函数内部的 this 指向问题，所以要换成以下写法 beforeRouteLeave: function (to, from, next) { console.log(this) // undefined next() }, beforeRouteEnter(to, from, next) { next((vm) =&amp;gt; { if (from.name</description>
     </item>
-    
     <item>
       <title>vue-router push 不更新缓存页面.</title>
       <link>https://huoguogit.github.io/post/vue-router-push-%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%BC%93%E5%AD%98%E9%A1%B5%E9%9D%A2/</link>
       <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/vue-router-push-%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%BC%93%E5%AD%98%E9%A1%B5%E9%9D%A2/</guid>
       <description>在开发中遇到一个问题,第一步,搜索页面点击跳转到某一个详情后,希望可以返回时缓存搜索页面.直接回到搜索结果还在的页面,而不是重新加载页面.这</description>
     </item>
-    
     <item>
       <title>移动端兼容:Input光标</title>
       <link>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9input%E5%85%89%E6%A0%87/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9input%E5%85%89%E6%A0%87/</guid>
       <description>https://blog.csdn.net/weixin_64355008/article/details/127824880 ios和安卓中发现input的光标高度不一致 //. IOS的input光标高度问题 原因: 因为我们习惯用height和line-height设置高</description>
     </item>
-    
     <item>
       <title>移动端兼容:输入框键盘弹起覆盖上面页面</title>
       <link>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9%E8%BE%93%E5%85%A5%E6%A1%86%E9%94%AE%E7%9B%98%E5%BC%B9%E8%B5%B7%E8%A6%86%E7%9B%96%E4%B8%8A%E9%9D%A2%E9%A1%B5%E9%9D%A2/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9%E8%BE%93%E5%85%A5%E6%A1%86%E9%94%AE%E7%9B%98%E5%BC%B9%E8%B5%B7%E8%A6%86%E7%9B%96%E4%B8%8A%E9%9D%A2%E9%A1%B5%E9%9D%A2/</guid>
       <description>移动端项目中,发现输入框键盘会弹起覆盖上面页面 //核心解决思路是用过Input的focue和blur事件来调整. //当键盘弹起时,将上面区域</description>
     </item>
-    
     <item>
       <title>打包时替换成相对路径</title>
       <link>https://huoguogit.github.io/post/%E6%89%93%E5%8C%85%E6%97%B6%E6%9B%BF%E6%8D%A2%E6%88%90%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E6%89%93%E5%8C%85%E6%97%B6%E6%9B%BF%E6%8D%A2%E6%88%90%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</guid>
       <description>具体思路参考这篇文章:https://www.yii666.com/blog/296671.html 在vue项目中,通过npm build 打包的文件,</description>
     </item>
-    
     <item>
       <title>item2终端常用快捷键.</title>
       <link>https://huoguogit.github.io/post/item2%E7%BB%88%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/item2%E7%BB%88%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description>因为老是出现item2报错后不知道怎么清屏,每次都重新退出浪费时间,所以记录下常用的快捷键 &amp;lt;!-- 常用 --&amp;gt; 清屏 command+k 到行首control + a 到行尾 control + e</description>
     </item>
-    
     <item>
       <title>mac设置用vscode打开文件夹</title>
       <link>https://huoguogit.github.io/post/mac%E8%AE%BE%E7%BD%AE%E7%94%A8vscode%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/mac%E8%AE%BE%E7%BD%AE%E7%94%A8vscode%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
       <description>mac中利用自动操作,实现右键利用vscode打开目标文件夹 https://blog.csdn.net/Shao_yihao/article/details/127834604 //shall脚本代码 for f in &amp;#34;$@&amp;#34; do open -a &amp;#34;Visual Studio Code&amp;#34; &amp;#34;$f&amp;#34; done 注意:该代码能运行的核心在于右上</description>
     </item>
-    
     <item>
       <title>rpx转rem</title>
       <link>https://huoguogit.github.io/post/rpx%E8%BD%ACrem/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/rpx%E8%BD%ACrem/</guid>
       <description>需求:把小程序页面改成h5页面,其中小程序的rpx无法直接用在h5页面,所以需要转换成rem 相关解决库: https://github.com/landn172/postcss-rpxtorem //1.新建文件夹 //2.初始化n</description>
     </item>
-    
     <item>
       <title>css设置背景色透明</title>
       <link>https://huoguogit.github.io/post/css%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E8%89%B2%E9%80%8F%E6%98%8E/</link>
       <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/css%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E8%89%B2%E9%80%8F%E6%98%8E/</guid>
       <description>/* 设置背景色为透明 */ background-color: transparent; 值得注意的是，透明度并非指完全透明，而是会透出下一层的颜色或图片。如果想要完全透明，则可以设置为rgba(0,0,0</description>
     </item>
-    
     <item>
       <title>小程序设置背景图片(铺满全屏)</title>
       <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E9%93%BA%E6%BB%A1%E5%85%A8%E5%B1%8F/</link>
       <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E9%93%BA%E6%BB%A1%E5%85%A8%E5%B1%8F/</guid>
       <description>微信小程序中,背景图片不支持在css中设置 background-image: url();(除非是base64的格式),所以需要添加个image标签,然后标签设置对应的样式 1.wxml</description>
     </item>
-    
     <item>
       <title>小程序跳转回上个页面后,缓存/重写上个页面的表单数据</title>
       <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%B7%B3%E8%BD%AC%E5%9B%9E%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%90%8E%E7%BC%93%E5%AD%98%E9%87%8D%E5%86%99%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%B7%B3%E8%BD%AC%E5%9B%9E%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%90%8E%E7%BC%93%E5%AD%98%E9%87%8D%E5%86%99%E4%B8%8A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</guid>
       <description>小程序中遇到如下需求,我需要跳转到一个新的页面(日期选择界面)获取用户选择的日期,但是跳转回上一页后,会导致之前的表单数据被重置,所以需要缓</description>
     </item>
-    
     <item>
       <title>笔记</title>
       <link>https://huoguogit.github.io/post/note/</link>
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/note/</guid>
       <description>新增一个测试文章11111</description>
     </item>
-    
     <item>
       <title>小程序页面部分区域渲染另一个html(引入第三方库)</title>
       <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B5%E9%9D%A2%E9%83%A8%E5%88%86%E5%8C%BA%E5%9F%9F%E6%B8%B2%E6%9F%93%E5%8F%A6%E4%B8%80%E4%B8%AAhtml%E5%BC%95%E5%85%A5%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/</link>
       <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B5%E9%9D%A2%E9%83%A8%E5%88%86%E5%8C%BA%E5%9F%9F%E6%B8%B2%E6%9F%93%E5%8F%A6%E4%B8%80%E4%B8%AAhtml%E5%BC%95%E5%85%A5%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/</guid>
       <description>微信小程序中,有个新的需求,在原来的界面中,需要显示html代码片段内容，内容是通过接口读取的服务器中的富文本内容，是html代码片段， ri</description>
     </item>
-    
     <item>
       <title>微信小程序observe不生效</title>
       <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6observe%E4%B8%8D%E7%94%9F%E6%95%88/</link>
       <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6observe%E4%B8%8D%E7%94%9F%E6%95%88/</guid>
       <description>微信小程序中,自定义的组件components的页面,写一个observe监听器,但是不生效,之前也遇到过类似的问题,用一些小程序组件特有的</description>
     </item>
-    
     <item>
       <title>高德为信息窗体添加点击事件</title>
       <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E4%B8%BA%E4%BF%A1%E6%81%AF%E7%AA%97%E4%BD%93%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E4%B8%BA%E4%BF%A1%E6%81%AF%E7%AA%97%E4%BD%93%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6/</guid>
       <description>即使是用的vue，也不能使用@click为窗体添加点击事件，需要使用onclick，并且在定义了函数后，使用该函数还是会报函数未定义的错误，</description>
     </item>
-    
     <item>
       <title>高德加载自定义覆盖物图标本地路径问题</title>
       <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%8A%A0%E8%BD%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A6%86%E7%9B%96%E7%89%A9%E5%9B%BE%E6%A0%87%E6%9C%AC%E5%9C%B0%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</guid>
       <description>高德地图渲染点覆盖物时导入本地图标发现导入的图标不会生效 传统的写法 image: &amp;#39;//vdata.amap.com/icons/b18/1/2.png&amp;#39;, //或者 require(‘./xxxx’) 在vue3中都没用,会提示r</description>
     </item>
-    
     <item>
       <title>高德引入AmapUI,</title>
       <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E5%BC%95%E5%85%A5amapui/</guid>
       <description>高德地图除了引入传统必须得js api,还可以引入组件库AMapUI,可以使用下面的一些基础控件 https://lbs.amap.com/api/amap-ui/reference-amap-ui/control/basiccontrol 首先安装库 npm install @amap/amapui-wrapper //或者 yarn add @amap/amapui-wrapper 引入相关文件 ​</description>
     </item>
-    
     <item>
       <title>vue3中的reactive显示值</title>
       <link>https://huoguogit.github.io/post/vue3%E4%B8%AD%E7%9A%84reactive%E6%98%BE%E7%A4%BA%E5%80%BC/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/vue3%E4%B8%AD%E7%9A%84reactive%E6%98%BE%E7%A4%BA%E5%80%BC/</guid>
       <description>vue3中reactive一般是用来定义响应式数据对象的,如果想要查看这个对象的值,不需要使用.value,直接打印就可以了 const state = reactive({ count: 0 }) console.log(state.count)</description>
     </item>
-    
     <item>
       <title>小程序中出现this.setdata Undifined</title>
       <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%87%BA%E7%8E%B0this.setdata-undifined/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%87%BA%E7%8E%B0this.setdata-undifined/</guid>
       <description>小程序函数中有概率会出现this.setdata时,报错显示 Cannot read property &amp;lsquo;setData&amp;rsquo; of undefined 这是因为在声明函数时,声明的方法不同,也会造成this指向不同,导致</description>
     </item>
-    
     <item>
       <title>小程序中引入组件时&#39;Cannot read property ‘name‘ of undefined TypeError&#39;</title>
       <link>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%BC%95%E5%85%A5%E7%BB%84%E4%BB%B6%E6%97%B6cannot-read-property-name-of-undefined-typeerror/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%BC%95%E5%85%A5%E7%BB%84%E4%BB%B6%E6%97%B6cannot-read-property-name-of-undefined-typeerror/</guid>
       <description>小程序中引入组件时报错,&amp;lsquo;Cannot read property ‘name‘ of undefined TypeError&amp;rsquo; 原因:组件中的声明 properties 属性时需要声明其 属性类型 properties: { isshow: { type: Boolean, value: false }, },</description>
     </item>
-    
     <item>
       <title>高德显示AMap is not defined</title>
       <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAamap-is-not-defined/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAamap-is-not-defined/</guid>
       <description>高德在vue中常见的的组件加载问题,AMap is not defined,直接这么写会报错, const districtSearch = new AMap.DistrictSearch({ subdistrict: 1, extensions: &amp;#39;all&amp;#39;, level: &amp;#39;city&amp;#39;, showbiz: false, city }) districtSearch.search(city, (status, result) =&amp;gt; { console.log(city, status, result) if (status === &amp;#39;complete&amp;#39;) { districtList.value</description>
     </item>
-    
     <item>
       <title>pinia只能存储vue数据或方法</title>
       <link>https://huoguogit.github.io/post/pinia%E5%8F%AA%E8%83%BD%E5%AD%98%E5%82%A8vue%E6%95%B0%E6%8D%AE%E6%88%96%E6%96%B9%E6%B3%95/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/pinia%E5%8F%AA%E8%83%BD%E5%AD%98%E5%82%A8vue%E6%95%B0%E6%8D%AE%E6%88%96%E6%96%B9%E6%B3%95/</guid>
       <description>试图将高德生成的map实例,存储到pinia中,但是发现pinia只能存储vue数据或方法,不能存储高德的map实例 Pinia 是一个基于 Vue.js 的状态管理</description>
     </item>
-    
     <item>
       <title>provide只能用于爷传孙,不能用于兄弟组件</title>
       <link>https://huoguogit.github.io/post/provide%E5%8F%AA%E8%83%BD%E7%94%A8%E4%BA%8E%E7%88%B7%E4%BC%A0%E5%AD%99%E4%B8%8D%E8%83%BD%E7%94%A8%E4%BA%8E%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/provide%E5%8F%AA%E8%83%BD%E7%94%A8%E4%BA%8E%E7%88%B7%E4%BC%A0%E5%AD%99%E4%B8%8D%E8%83%BD%E7%94%A8%E4%BA%8E%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6/</guid>
       <description>在Vue中，使用provide/inject提供的数据是可以在兄弟组件中访问的，不仅限于父子组件之间。这是因为provide/inject是</description>
     </item>
-    
     <item>
       <title>高德渲染图标概率性报错(不显示)</title>
       <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%B8%B2%E6%9F%93%E5%9B%BE%E6%A0%87%E6%A6%82%E7%8E%87%E6%80%A7%E6%8A%A5%E9%94%99%E4%B8%8D%E6%98%BE%E7%A4%BA/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%B8%B2%E6%9F%93%E5%9B%BE%E6%A0%87%E6%A6%82%E7%8E%87%E6%80%A7%E6%8A%A5%E9%94%99%E4%B8%8D%E6%98%BE%E7%A4%BA/</guid>
       <description>新汴河大屏项目.发现根据请求数据加载网络点位时,有的时候能顺利加载点位,有的时候无法加载 打印加载失败的报错信息,发现都是通知AMap is not defined. c</description>
     </item>
-    
     <item>
       <title>element Autocomplete组件下拉框无法渲染</title>
       <link>https://huoguogit.github.io/post/element-autocomplete%E7%BB%84%E4%BB%B6%E4%B8%8B%E6%8B%89%E6%A1%86%E6%97%A0%E6%B3%95%E6%B8%B2%E6%9F%93/</link>
       <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/element-autocomplete%E7%BB%84%E4%BB%B6%E4%B8%8B%E6%8B%89%E6%A1%86%E6%97%A0%E6%B3%95%E6%B8%B2%E6%9F%93/</guid>
       <description>element的Autocomplete组件下拉框无法渲染,但是输入框可以正常输入,并有数据,查阅资料显示 const querySearchAsync = (queryStr, cb) =&amp;gt; { placeSearch.search(queryStr, (status, result) =&amp;gt; { // console.log(status, result) if (status</description>
     </item>
-    
     <item>
       <title>element Autocomplete组件样式修改</title>
       <link>https://huoguogit.github.io/post/element-autocomplete%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F%E4%BF%AE%E6%94%B9/</link>
       <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/element-autocomplete%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F%E4%BF%AE%E6%94%B9/</guid>
       <description>element的Autocomplete组件下拉框样式无法直接修改.查阅资料后发现需要先取消掉中的scope.然后再在style中找到相应的</description>
     </item>
-    
     <item>
       <title>高德显示xxx is not a construct </title>
       <link>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAxxx-is-not-a-construct-copy/</link>
       <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E9%AB%98%E5%BE%B7%E6%98%BE%E7%A4%BAxxx-is-not-a-construct-copy/</guid>
       <description>高德在vue中常见的的组件加载问题,xxx组件is not a constructor 在创建高德地图时引入插件.有时候会没用.网上说的引入sdk的方法也不适用于vue 解决</description>
     </item>
-    
     <item>
       <title>文字超出后换行(小程序)</title>
       <link>https://huoguogit.github.io/post/%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E5%90%8E%E6%8D%A2%E8%A1%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F-copy/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E5%90%8E%E6%8D%A2%E8%A1%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F-copy/</guid>
       <description>可以使用CSS的word-wrap和word-break属性来实现中文自动换行。 word-wrap属性用于指定是否允许单词内换行，取值包括n</description>
     </item>
-    
     <item>
       <title>测试图片上传</title>
       <link>https://huoguogit.github.io/post/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0/</guid>
       <description>贴一个图片地址看能否上传成功</description>
     </item>
-    
     <item>
       <title>element图标按需加载失效/插槽图标.</title>
       <link>https://huoguogit.github.io/post/element%E5%9B%BE%E6%A0%87%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD%E5%A4%B1%E6%95%88%E6%8F%92%E6%A7%BD%E5%9B%BE%E6%A0%87/</link>
       <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/element%E5%9B%BE%E6%A0%87%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD%E5%A4%B1%E6%95%88%E6%8F%92%E6%A7%BD%E5%9B%BE%E6%A0%87/</guid>
       <description>今天在实现elementPlus自动导入图标发现导入的图标不会生效 解决链接:https://www.jianshu.com/p/232298</description>
     </item>
-    
     <item>
       <title>修改组件中的样式:v-deep</title>
       <link>https://huoguogit.github.io/post/%E4%BF%AE%E6%94%B9%E7%BB%84%E4%BB%B6%E4%B8%AD%E7%9A%84%E6%A0%B7%E5%BC%8Fv-deep/</link>
       <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/%E4%BF%AE%E6%94%B9%E7%BB%84%E4%BB%B6%E4%B8%AD%E7%9A%84%E6%A0%B7%E5%BC%8Fv-deep/</guid>
       <description>element等组件库中的组件需要通过样式穿透修改.找到他们类名,一步步穿透下去 你可以使用 ::v-deep 或者 /deep/ 来覆盖 Element Plus 组件的样式。这两种方式的作用相同</description>
     </item>
-    
     <item>
       <title>hello world</title>
       <link>https://huoguogit.github.io/post/hello-world/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://huoguogit.github.io/post/hello-world/</guid>
       <description>测试第一篇blog</description>
     </item>
-    
   </channel>
 </rss>
