@@ -235,17 +235,17 @@
     }
 </code></pre><p>如果el-autocomplete接受的数组对象里面没有value属性，就需要用value-key（输入建议对象中用于显示的键名）可以指定对应的key，如果不用value-key,那就需要处理数组，给数组加上一个value的key，要不然输入建议显示不出来，如下图</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vue" data-lang="vue"><span style="display:flex;"><span>  &lt;<span style="color:#ff79c6">el-autocomplete</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#50fa7b">v</span><span style="color:#ff79c6">-model</span>=&#34;<span style="color:#50fa7b">inputValue</span>&#34;
-</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">:fetch-suggestions</span><span style="color:#f1fa8c">=&#34;querySearchAsync&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">v-model</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;inputValue&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">:fetch-suggestions</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;querySearchAsync&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#50fa7b">placeholder</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;请输入关键词&#34;</span>
 </span></span><span style="display:flex;"><span>      //<span style="color:#50fa7b">因为请求回来的数据是数组对象</span>,<span style="color:#50fa7b">所以取每个对象中的name值</span>,<span style="color:#50fa7b">这样下拉就会渲染name</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#50fa7b">value</span><span style="color:#ff79c6">-key</span>=&#34;<span style="color:#50fa7b">name</span>&#34;
-</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">:trigger-on-focus</span><span style="color:#f1fa8c">=&#34;false&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">:trigger-on-focus</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;false&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#50fa7b">popper</span><span style="color:#ff79c6">-class</span>=&#34;<span style="color:#50fa7b">autocompletePopper</span>&#34;
-</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">:popper-append-to-body</span><span style="color:#f1fa8c">=&#34;false&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">:popper-append-to-body</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;false&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">@select</span><span style="color:#f1fa8c">=&#34;handleSelect&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;my-autocomplete&#34;</span>
-</span></span><span style="display:flex;"><span>    &gt;<span style="color:#ff79c6">&lt;</span>/el-autocomplete&gt;
+</span></span><span style="display:flex;"><span>    &gt;&lt;/<span style="color:#ff79c6">el-autocomplete</span>&gt;
 </span></span></code></pre></div><p>
   <img src="https://raw.githubusercontent.com/huoguo32/blog-image/main/image-20230308194259941.png" alt="image-20230308194259941">
 
